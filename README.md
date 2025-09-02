@@ -18,6 +18,7 @@ Useful for reducing latency, CPU cache misses, and improving throughput
 
 ### Run manually
 ```
+chmod +x irq-pinning.sh
 sudo ./irq-pinning.sh
 ````
 
