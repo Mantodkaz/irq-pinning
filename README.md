@@ -93,7 +93,7 @@ watch -n1 "grep -H . /proc/softirqs | sed -n '1p;/NET_[RT]X/p'"
 ## Notes
 * Requires root (`sudo`).
 * Disable irqbalance service for best results (`systemctl stop irqbalance`)
-* For persistent setup, run via systemd service (see [irq-pinning.service](https://github.com/Mantodkaz/irq-pinning/edit/main/README.md#systemd-setup-persistent))
+* For persistent setup, run via systemd service (see [irq-pinning.service](https://github.com/Mantodkaz/irq-pinning?tab=readme-ov-file#systemd-setup-persistent))
 * Best for **bare metal servers** (`VPS hypervisors may block affinity changes`)
 * Works well high throughput NICs, and gaming/streaming rigs
 * Combine with `BBR` or custom sysctl tuning for maximum performance
