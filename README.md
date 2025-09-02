@@ -78,10 +78,9 @@ Now the script will automatically run at boot.
 
 ## Verify
 
-You can check applied affinity with:
+Check IRQ affinity:
 ```bash
-grep -E "eth|enp|ens|eno|wlo|wl" /proc/interrupts
-cat /proc/irq/*/smp_affinity_list
+grep -H . /proc/irq/*/smp_affinity_list
 ```
 
 And monitor distribution:
